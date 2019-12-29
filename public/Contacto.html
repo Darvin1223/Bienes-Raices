@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
     <title>Contactanos</title>
 </head>
 
@@ -35,7 +36,17 @@
     <img src="img/destacada3.jpg" alt="Principal">
     <main class="contenedor secction contenido-centrado">
         <h2 class="fw-300 centrar-texto">Llenar el formulario de Contacto</h2>
-        <form action="">
+        <form name="contact" method="POST" data-netlify="true" id="my-form">
+            <fieldset>
+                <legend>Tipo de solicitud</legend>
+                <div class="forma-contacto">
+                    <label for="">Alquiler</label>
+                    <input type="radio" name="Eleccion" id="Alquiler" value="Alquiler" onclick="Opciones()">
+                    <label for="">Compra o venta</label>
+                    <input type="radio" name="Eleccion" id="Comven" value="Compra o Venta" onclick="Opciones()">
+                </div>
+
+            </fieldset>
             <fieldset>
                 <legend>Informacion Personal</legend>
                 <label for="Nombre">Nombre:</label>
